@@ -4,12 +4,162 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Joten Excel Schooling</title>
     <link rel="stylesheet" href="css\styles.css ">
 </head>
 
 <body>
+    <nav>
+        <header>
+            <div class="logo-icon"></div>
+        </header>
+
+        <section class="nav-container">
+            <a href="#" class="nav-item">Home</a>
+            <a href="#our-profile" class="nav-item">Our Profile</a>
+            <a href="#achievement" class="nav-item">Achievement</a>
+            <a href="#message" class="nav-item">Message Us</a>
+            <a href="#" class="nav-item">Portfolio</a>
+
+        </section>
+
+    </nav>
+
+    <hr />
+
+
+    <main>
+        <article style="padding-bottom: 500px;">
+            <header>
+                <h1>Halo <span id="name">Tamu yang terhormat</span>, Selamat Datang di Joten Language School</h1>
+            </header>
+
+            <p>
+                Di sekolah ini kami dapat memberikan wawasan luar biasa yang kreatif 
+                sehingga para murid dapat menggapai cita-cita yang mereka impikan!
+            </p>            
+            
+            <div class="banner-img"></div>
+        </article>
+            
+        <hr />
+
+        <section id="our-profile">
+            <header>
+                <h1>Our Profile</h1>
+            </header>
+        
+            <section class="profile-container">
+                <div class="profile-item">
+                    <div class="profile-imga"></div>
+                    <h2>Japanese Language</h2>
+                </div>
+
+                <div class="profile-item">
+                    <div class="profile-imgb"></div>
+                    <h2>Russian Language</h2>
+                </div>
+
+                <div class="profile-item">
+                    <div class="profile-imgc"></div>
+                    <h2>English Language</h2>
+                </div>
+            </section>
+        </section>
+
+        
+        
+        
+        <hr/>
+
+        <section id="achievement">
+            <header>
+              <h1>Achievement</h1>
+            </header>
+
+            <div class="profile-achievement">
+                <img src="assets/jpplace.png" width="640" height="480" />
+                <h2>
+                    Sekolah bahasa ini pernah memperoleh penghargaan untuk kelas Bahasa Jepang dengan penyampaian 
+                    materi Bahasa Jepang dengan nuansa Tatami
+                </h2>
+                <p>
+                    域ウス件販ふばぞー突9要覧男あてそじ破手れッ入間ば住約リコヘ作2全きつー床断ぴみ多起が設丘甘礼け。
+                </p>
+            </div>
+
+            <div class="profile-achievement">
+                <img src="assets/rusplace.png" width="640" height="480" />
+                <h2>
+                    Sekolah bahasa ini pernah memperoleh penghargaan untuk Kelas Bahasa Rusia dengan kelulusan terbanyak</h2>
+                <p>
+                    Лорем ипсум долор сит амет, пер цлита поссит ех, ат мунере фабулас петентиум сит. 
+                    Иус цу цибо саперет сцрипсерит, нец виси муциус лабитур ид. Ет хис нонумес нолуиссе дигниссим
+                </p>
+            </div>
+
+        <section>
+            <h2>Formulir Belajar</h2>
+            <p>Ini adalah situs latihan bersama</p>
+        </section>
+        
+        <hr/>
+
+        <section id="message">
+            <header>
+              <h1>Message Us</h1>
+            </header>
+
+            <div class="form-container">
+              <div class="form">
+                <form name="message-form" onsubmit="return validateform()">
+                  Nama: <input placeholder="Nama" type="text" name="nama" /><br />
     
+                  Tanggal Lahir :
+                  <input type="date" name="tanggal-lahir" /><br />
+    
+                  Jenis Kelamin: <br />
+                  <input
+                    type="radio"
+                    id="laki-laki"
+                    name="jenis-kelamin"
+                    value="laki-laki"
+                  />
+                  <label for="laki-laki">Laki-laki</label><br />
+                  <input
+                    type="radio"
+                    id="perempuan"
+                    name="jenis-kelamin"
+                    value="perempuan"
+                  />
+                  <label for="perempuan">Perempuan</label><br />
+    
+                  Pesan:
+                  <textarea placeholder="Silakan isi pesan anda" name="pesan"></textarea><br />
+    
+                  <input type="submit" value="submit" />
+                </form>
+              </div>
+
+              <div class="output-form">
+                <p>Nama: <span id="sender-nama"></span></p>
+                <p>Tanggal Lahir: <span id="sender-tanggal-lahir"></span></p>
+                <p>Jenis Kelamin: <span id="sender-jenis-kelamin"></span></p>
+                <p>Pesan: <span id="sender-pesan"></span></p>
+              </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-bottom">
+          <p>&copy; 2024 Joten Language School. Protected under Trademark Rights.</p>
+          <p class="made-by">Made by Farmateva</p>
+        </div>
+      </footer>
+
+      <script src="js/script.js"></script>
+
 </body>
 
 </html>
